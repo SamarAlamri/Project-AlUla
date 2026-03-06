@@ -1,22 +1,42 @@
 /* Name: [Your Name], ID: [Your ID], Section: [Section], Date: [Current Date] */
 
-// Function to validate the form before submission
 function validateForm() {
     var name = document.getElementById("username").value;
     var email = document.getElementById("useremail").value;
+    var rating = document.getElementsByName("rating");
+    var travelMode = document.getElementById("travel-mode").value;
+    var ratingSelected = false;
+    var i;
 
-    // Basic check: Are the fields empty?
-    if (name == "" || email == "") {
-        alert("Name and Email must be filled out!");
-        return false; // Stops the form from submitting
+    if (name === "" || email === "") {
+        alert("Name and Email must be filled out.");
+        return false;
     }
 
-    // Check if email contains '@' (Basic validation taught in basics)
-    if (email.indexOf("@") == -1) {
+    if (email.indexOf("@") === -1) {
         alert("Please enter a valid email address.");
         return false;
     }
 
-    alert("Thank you, " + name + "! Your feedback is being processed.");
-    return true; // Allows the form to submit to PHP
+    for (i = 0; i < rating.length; i++) {
+        if (rating[i].checked) {
+            ratingSelected = true;
+            break;
+        }
+    }
+
+    if (!ratingSelected) {
+        alert("Please select a rating.");
+        return false;
+    }
+
+    if (travelMode === "") {
+        alert("Please select your preferred travel mode.");
+        return false;
+    }
+
+    document.getElementById("formMessage").innerHTML =
+        "Thank you, " + name + "! Your feedback has been submitted successfully.";
+
+    return false;
 }
