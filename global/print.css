@@ -1,14 +1,22 @@
 /* Name: [Your Name], ID: [Your ID], Section: [Section], Date: [Current Date] */
 
-/* Hide everything except the main-content */
-header, nav, footer, aside, #sidebar {
+/* Hide everything except the main table when printing */
+header,
+nav,
+footer,
+aside,
+#sidebar,
+h1,
+h2,
+p,
+form {
     display: none;
 }
 
-/* Ensure the table takes up the full page width for printing */
+/* Print table only */
 table {
     width: 100%;
-    border-collapse: collapse; /* Lecture 05: makes borders look professional */
+    border-collapse: collapse;
 }
 
 th, td {
@@ -17,7 +25,6 @@ th, td {
     text-align: left;
 }
 
-/* Lecture 04: Formatting the print page */
 @page {
     size: A4 portrait;
     margin: 1in;
