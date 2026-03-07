@@ -1,94 +1,186 @@
+<!-- Name: Zain Aljifry, ID: 2107808, Section: DAR, Date: 8 march -->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
+    <!-- Defines the character encoding used for the webpage -->
     <meta charset="UTF-8">
+
+    <!-- Title that appears in the browser tab -->
     <title>AlUla 360 - Feedback</title>
+
+    <!-- Linking the external CSS file that styles the website -->
     <link rel="stylesheet" href="../global/main.css">
+
 </head>
+
 <body>
+
+    <!-- Header section containing the website logo, title, and navigation menu -->
     <header>
 
+<!-- Website logo -->
 <img src="../images/logo.png" alt="AlUla Logo" id="site-logo">
 
+<!-- Main website title -->
 <h1>AlUla 360</h1>
 
+<!-- Navigation menu allowing users to move between pages -->
 <nav>
+
+<!-- Link to the Home page -->
 <a href="../index.html">Home</a>
+
+<!-- Link to the History page -->
 <a href="about.html">History</a>
+
+<!-- Link to the Services page -->
 <a href="services.html">Services</a>
+
+<!-- Link to the Video page -->
 <a href="video.html">Video</a>
+
+<!-- Link to the Schedule page -->
 <a href="schedule.html">Schedule</a>
+
+<!-- Link to the Feedback page -->
 <a href="feedback.html">Feedback</a>
+
 </nav>
 
 </header>
 
+
+    <!-- Main content area of the feedback page -->
     <div id="main-content">
+
+        <!-- Page heading -->
         <h2>We Value Your Feedback</h2>
+
+        <!-- Short description encouraging users to share their experience -->
         <p>Please tell us about your experience in AlUla.</p>
 
+        <!-- Feedback form where users can submit their information and opinions -->
         <form action="#" method="post" onsubmit="return validateForm();">
             
+            <!-- Input field for the user's full name -->
             <p>
+
+                <!-- Label describing the input -->
                 <label for="username">Full Name:</label><br>
+
+                <!-- Text input field where the user enters their name -->
                 <input type="text" id="username" name="username" required>
+
             </p>
             
+            <!-- Input field for the user's email -->
             <p>
+
+                <!-- Email label -->
                 <label for="useremail">Email Address:</label><br>
+
+                <!-- Email input field that requires a valid email format -->
                 <input type="email" id="useremail" name="useremail" required>
+
             </p>
 
+            <!-- Radio buttons allowing the user to rate their visit -->
             <p>How would you rate your visit? <br>
+
+                <!-- Option 1 -->
                 <input type="radio" id="good" name="rating" value="Good">
                 <label for="good">Good</label>
 
+                <!-- Option 2 -->
                 <input type="radio" id="average" name="rating" value="Average">
                 <label for="average">Average</label>
 
+                <!-- Option 3 -->
                 <input type="radio" id="poor" name="rating" value="Poor">
                 <label for="poor">Poor</label>
+
             </p>
 
+            <!-- Checkbox options for activities visitors enjoyed -->
             <p>Which activities did you enjoy? (Select all that apply):<br>
+
+                <!-- Activity option 1 -->
                 <input type="checkbox" id="hiking" name="activity[]" value="Hiking">
                 <label for="hiking">Hiking</label><br>
 
+                <!-- Activity option 2 -->
                 <input type="checkbox" id="tours" name="activity[]" value="Tours">
                 <label for="tours">Heritage Tours</label><br>
 
+                <!-- Activity option 3 -->
                 <input type="checkbox" id="stargazing" name="activity[]" value="Stargazing">
                 <label for="stargazing">Stargazing</label>
+
             </p>
 
+            <!-- Dropdown menu allowing users to choose their travel type -->
             <p>
+
+                <!-- Label for the dropdown -->
                 <label for="travel-mode">Preferred Travel Mode:</label><br>
+
+                <!-- Select menu -->
                 <select id="travel-mode" name="travel-mode">
+
+                    <!-- Default option -->
                     <option value="">Select One</option>
+
+                    <!-- Travel options -->
                     <option value="solo">Solo Traveler</option>
                     <option value="family">Family Group</option>
                     <option value="friends">Friends</option>
+
                 </select>
+
             </p>
 
+            <!-- Text area where users can write additional comments -->
             <p>
+
+                <!-- Label describing the textarea -->
                 <label for="comments">Additional Comments:</label><br>
+
+                <!-- Multi-line text input -->
                 <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+
             </p>
 
+            <!-- Buttons for submitting the form or clearing the inputs -->
             <p>
+
+                <!-- Submit button -->
                 <input type="submit" value="Submit Feedback">
+
+                <!-- Reset button that clears the form -->
                 <input type="reset" value="Clear Form">
+
             </p>
+
         </form>
 
+        <!-- Message area where JavaScript can display validation messages -->
         <p id="formMessage"></p>
+
     </div>
 
+    <!-- Footer section displayed at the bottom of the page -->
     <footer>
+
+        <!-- Copyright notice -->
         <p>&copy; 2026 AlUla 360 Project</p>
+
     </footer>
 
+    <!-- Linking the external JavaScript file used for form validation -->
     <script src="../scripts/main.js"></script>
+
 </body>
 </html>
