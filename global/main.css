@@ -8,142 +8,82 @@ margin:0;
 padding:0;
 }
 
-
-
-/* Header */
-
 header{
-
+position:relative;
 background-color:#7a3b1d;
 color:white;
-
 padding:20px;
-
 text-align:center;
-
 border-bottom:4px solid #e3c7a0;
-
 }
 
-
-
-/* Logo */
-
-header img{
-
+#site-logo{
+position:absolute;
+top:15px;
+left:20px;
+width:70px;
+height:auto;
 display:block;
-margin:0 auto 10px auto;
-
+margin:0;
+border:none;
 }
 
-
-
-/* Navigation */
+header h1{
+margin:0;
+padding-top:5px;
+}
 
 nav{
-margin-top:10px;
+margin-top:20px;
+background-color:#5a1a0a;
+padding:15px 0;
 }
-
-
-
-/* Navigation links */
 
 nav a{
-
 color:white;
 text-decoration:none;
-
 margin:0 20px;
-
 font-weight:bold;
-
 padding:6px 12px;
-
 }
-
-
-
-/* Hover effect */
 
 nav a:hover{
-
 background-color:#a45a35;
-
 border-radius:5px;
-
 }
-
-
-
-/* Sidebar */
 
 #sidebar{
-
 float:left;
 width:20%;
-
 background-color:#ecf0f1;
-
 padding:15px;
-
 margin:10px;
-
 border:1px solid #bdc3c7;
-
+box-sizing:border-box;
 }
-
-
-
-/* Main Content */
 
 #main-content{
-
 margin-left:25%;
-
 padding:20px;
-
 background-color:white;
-
 border:1px solid #ddd;
-
 min-height:400px;
-
+box-sizing:border-box;
 }
-
-
-
-/* Images */
 
 img{
-
 display:block;
-
 margin:20px auto;
-
 max-width:100%;
-
 height:auto;
-
 border:2px solid #333;
-
 }
 
-
-
-/* Footer */
-
 footer{
-
 clear:both;
-
 background-color:#7a3b1d;
-
 color:white;
-
 text-align:center;
-
 padding:10px;
-
 margin-top:20px;
-
 }
