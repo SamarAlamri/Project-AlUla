@@ -1,102 +1,254 @@
-/* Name: [Your Name], ID: [Your ID], Section: [Section], Date: [Current Date] */
-/* Body */
+/* Name: Zain Aljifry, ID: 2107808, Section: DAR, Date: 8 march */
 
+
+/* ========================= */
+/* Body Styling */
+/* ========================= */
+
+/* Styles applied to the entire webpage body */
 body{
+
+/* Sets the default font for the whole website */
 font-family:Arial, sans-serif;
+
+/* Sets the background color of the page */
 background-color:#f4f4f4;
+
+/* Removes default browser margin */
 margin:0;
+
+/* Removes default browser padding */
 padding:0;
+
 }
 
 
 
+/* ========================= */
+/* Header Styling */
+/* ========================= */
+
+/* Styles the top header section of the website */
 header{
+
+/* Allows positioning elements inside the header (like the logo) */
 position:relative;
+
+/* Sets the header background color */
 background-color:#7a3b1d;
+
+/* Sets the text color inside the header */
 color:white;
+
+/* Adds spacing inside the header */
 padding:20px;
+
+/* Centers the header text */
 text-align:center;
+
 }
 
 
 
+/* ========================= */
+/* Logo Styling */
+/* ========================= */
+
+/* Styles the website logo */
 #site-logo{
+
+/* Positions the logo inside the header */
 position:absolute;
+
+/* Distance from the top */
 top:5px;
+
+/* Distance from the left */
 left:20px;
+
+/* Logo width */
 width:180px;
+
+/* Keeps image proportions */
 height:auto;
+
+/* Removes default border */
 border:none;
+
 }
 
 
 
+/* ========================= */
+/* Website Title */
+/* ========================= */
+
+/* Styles the main title in the header */
 header h1{
+
+/* Removes default margin */
 margin:0;
+
+/* Adds spacing above the title */
 padding-top:10px;
+
 }
 
 
 
+/* ========================= */
+/* Navigation Menu */
+/* ========================= */
+
+/* Styles the navigation bar */
 nav{
+
+/* Adds space above the navigation bar */
 margin-top:20px;
+
+/* Navigation background color */
 background-color:#5a1a0a;
+
+/* Padding inside the navigation bar */
 padding:10px;
+
 }
 
 
 
+/* Styles navigation links */
 nav a{
+
+/* Link text color */
 color:white;
+
+/* Removes default underline */
 text-decoration:none;
+
+/* Adds horizontal spacing between links */
 margin:0 20px;
+
+/* Makes the text bold */
 font-weight:bold;
+
 }
 
 
 
+/* Hover effect when mouse moves over links */
 nav a:hover{
+
+/* Underline appears when hovering */
 text-decoration:underline;
+
 }
 
 
 
+/* ========================= */
+/* Sidebar Styling */
+/* ========================= */
+
+/* Styles the sidebar section */
 #sidebar{
+
+/* Positions sidebar on the left side */
 float:left;
+
+/* Sidebar width */
 width:20%;
+
+/* Background color */
 background-color:#ecf0f1;
+
+/* Padding inside the sidebar */
 padding:15px;
+
+/* Space outside the sidebar */
 margin:10px;
+
+/* Border around the sidebar */
 border:1px solid #bdc3c7;
+
 }
 
 
 
+/* ========================= */
+/* Main Content Styling */
+/* ========================= */
+
+/* Styles the main content area */
 #main-content{
+
+/* Creates space for the sidebar */
 margin-left:25%;
+
+/* Padding inside the content area */
 padding:20px;
+
+/* Background color */
 background-color:white;
+
+/* Border around the content */
 border:1px solid #ddd;
+
+/* Minimum height to keep layout balanced */
 min-height:400px;
+
 }
 
 
 
+/* ========================= */
+/* Image Styling */
+/* ========================= */
+
+/* Styles all images in the website */
 img{
+
+/* Displays images as block elements */
 display:block;
+
+/* Centers images horizontally */
 margin:20px auto;
+
+/* Prevents images from exceeding container width */
 max-width:100%;
+
+/* Keeps aspect ratio */
 height:auto;
+
+/* Adds border around images */
 border:2px solid #333;
+
 }
 
 
 
+/* ========================= */
+/* Footer Styling */
+/* ========================= */
+
+/* Styles the footer section */
 footer{
+
+/* Clears floating elements like the sidebar */
 clear:both;
+
+/* Footer background color */
 background-color:#7a3b1d;
+
+/* Footer text color */
 color:white;
+
+/* Centers footer text */
 text-align:center;
+
+/* Padding inside footer */
 padding:10px;
+
+/* Space above the footer */
 margin-top:20px;
+
 }
