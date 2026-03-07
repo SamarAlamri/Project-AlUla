@@ -1,5 +1,5 @@
 <?php
-/* Name: [Your Name], ID: [Your ID], Section: [Section], Date: [Current Date] */
+/* Name: [Zain Aljifry], ID: [2107808], Section: [DAR], Date: [8 march] */
 
 // Capture data from the form using the name attributes
 $name = $_POST['username'];
