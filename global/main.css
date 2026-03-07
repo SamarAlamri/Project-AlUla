@@ -8,49 +8,58 @@ margin:0;
 padding:0;
 }
 
+
+
 header{
 position:relative;
 background-color:#7a3b1d;
 color:white;
 padding:20px;
 text-align:center;
-border-bottom:4px solid #e3c7a0;
 }
+
+
 
 #site-logo{
 position:absolute;
-top:15px;
+top:10px;
 left:20px;
-width:70px;
+width:130px;
 height:auto;
-display:block;
-margin:0;
 border:none;
 }
 
+
+
 header h1{
 margin:0;
-padding-top:5px;
+padding-top:10px;
 }
+
+
 
 nav{
 margin-top:20px;
 background-color:#5a1a0a;
-padding:15px 0;
+padding:10px;
 }
+
+
 
 nav a{
 color:white;
 text-decoration:none;
 margin:0 20px;
 font-weight:bold;
-padding:6px 12px;
 }
 
+
+
 nav a:hover{
-background-color:#a45a35;
-border-radius:5px;
+text-decoration:underline;
 }
+
+
 
 #sidebar{
 float:left;
@@ -59,8 +68,9 @@ background-color:#ecf0f1;
 padding:15px;
 margin:10px;
 border:1px solid #bdc3c7;
-box-sizing:border-box;
 }
+
+
 
 #main-content{
 margin-left:25%;
@@ -68,8 +78,9 @@ padding:20px;
 background-color:white;
 border:1px solid #ddd;
 min-height:400px;
-box-sizing:border-box;
 }
+
+
 
 img{
 display:block;
@@ -78,6 +89,8 @@ max-width:100%;
 height:auto;
 border:2px solid #333;
 }
+
+
 
 footer{
 clear:both;
