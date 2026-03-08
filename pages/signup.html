@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AlUla 360 - Sign Up</title>
+    <link rel="stylesheet" href="../global/main.css">
+</head>
+<body>
+    <div id="Sign-in">
+        <h2>Create an Account</h2>
+        <form action="../server/process_feedback.php" method="post">
+            <p>
+                <label for="new-user">Username:</label><br>
+                <input type="text" id="new-user" name="username" required>
+            </p>
+            <p>
+                <label for="new-email">Email:</label><br>
+                <input type="email" id="new-email" name="email" required>
+            </p>
+            <p>
+                <label for="pass">Password:</label><br>
+                <input type="password" id="pass" name="password" required>
+            </p>
+            <p>
+                <a href="../index.html" style="text-decoration: none;">
+                    <input type="submit" value="Sign Up" formaction="../index.html">
+                </a>
+            </p>
+        </form>
+        <p>Already have an account? <a href="Signin.html">SignIn here</a></p>
+    </div>
+</body>
+</html>

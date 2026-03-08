@@ -77,6 +77,41 @@ border:none;
 
 }
 
+/* ========================= */
+/* Login Icon Styling */
+/* ========================= */
+
+#Signin-icon {
+    /* Position it relative to the <header> */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    
+    /* Style the link */
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#Signin-icon img {
+    /* Size the icon (adjust as needed) */
+    width: 30px; 
+    height: auto;
+    
+    /* Remove the default border you have for all images */
+    border: none;
+    
+    /* Center it above or beside the text */
+    margin: 0 auto 5px auto; 
+    display: block;
+}
+
+#Signin-icon:hover {
+    /* Hover effect from Lecture 03 */
+    text-decoration: underline;
+    opacity: 0.8;
+}
 
 
 /* ========================= */
@@ -251,4 +286,61 @@ padding:10px;
 /* Space above the footer */
 margin-top:20px;
 
+}
+
+/* ========================= */
+/* Login & Sign Up Palette */
+/* ========================= */
+
+/* The container box */
+#Sign-in {
+    width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff; /* Clean white for the box */
+    border: 1px solid #d4a373; /* Sand-colored border */
+    border-top: 5px solid #7a3b1d; /* Deep terracotta top accent */
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1); /* Optional: subtle depth */
+}
+
+/* Titles inside the form */
+#Sign-in h2 {
+    color: #5a1a0a; /* Darker earth tone */
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+input[type="text"], 
+input[type="email"], 
+input[type="password"] {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #bdc3c7;
+    background-color: #fdfaf5; /* Very light sand background */
+    color: #333; /* Dark Charcoal text for readability */
+}
+
+/* Focused input (when user clicks) */
+input[type="text"]:focus, 
+input[type="password"]:focus {
+    border: 1px solid #7a3b1d;
+    outline: none;
+}
+
+/* The Submit Button */
+input[type="submit"] {
+    width: 100%;
+    background-color: #7a3b1d; /* Terracotta */
+    color: white;
+    padding: 12px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #5a1a0a; /* Darkens on hover (Lecture 03) */
 }
