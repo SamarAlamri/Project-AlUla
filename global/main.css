@@ -1,4 +1,4 @@
-/* Name: Zain Aljifry, ID: 2107808, Section: DAR, Date: 8 march */
+/* Name: Zain Aljifry, ID: 2107808, Section: DAR, Date: 8 march *//* Name: Samar Alamri, ID: 2206831, Section: DAR, Date: 8 march */
 
 
 /* ========================= */
@@ -175,35 +175,6 @@ nav a:hover{
 
 /* Underline appears when hovering */
 text-decoration:underline;
-
-}
-
-
-
-/* ========================= */
-/* Sidebar Styling */
-/* ========================= */
-
-/* Styles the sidebar section */
-#sidebar{
-
-/* Positions sidebar on the left side */
-float:left;
-
-/* Sidebar width */
-width:20%;
-
-/* Background color */
-background-color:#ecf0f1;
-
-/* Padding inside the sidebar */
-padding:15px;
-
-/* Space outside the sidebar */
-margin:10px;
-
-/* Border around the sidebar */
-border:1px solid #bdc3c7;
 
 }
 
