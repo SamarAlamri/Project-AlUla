@@ -18,163 +18,113 @@
 
 <body>
 
-<!-- Header section containing the logo, website title, and navigation menu -->
-<header>
+<header id="main-hero" class="history-hero slim-header">
+    <div class="hero-overlay">
+        <div class="hero-content">
+            <h1>The Sands of Time</h1>
+            <p>7,000 years of human history</p>
+            <nav >
+                <!-- Link to the Home page -->
+                <a href="../index.html">Home</a>
 
-<!-- Website logo image -->
-<img src="../images/logo.png" alt="AlUla Logo" id="site-logo">
+                <!-- Link to the History page -->
+                <a href="history.html">History</a>
 
-<a href="../pages/Signin.html" id="Signin-icon">
-        <img src="../images/user.png" alt="Sign In">
-        <span>Sign In</span>
-    </a>
+                <!-- Link to the Video page -->
+                <a href="video.html">Video</a>
 
-<!-- Main title of the website -->
-<h1>AlUla 360</h1>
+                <a href="services.html" class="protected-link" style="display: none;">Services</a>
 
-<!-- Navigation menu used to move between the pages of the website -->
-<nav>
+                <a href="mytour.html" class="protected-link" style="display: none;">My Tour</a>
 
-<!-- Link to the Home page -->
-<a href="../index.html">Home</a>
+                <!-- Link to the Feedback page -->
+                <a href="feedback.html">Feedback</a>
 
-<!-- Link to the History page -->
-<a href="history.html">History</a>
+                <!-- Link to the login page -->
+                <a href="SignIn.html" id="login-link">SignIn/SignUp</a>
 
-<!-- Link to the Services page -->
-<a href="services.html">Services</a>
+                <a href=null class="protected-link" style="display: none;">welcome!</a>
 
-<!-- Link to the Video page -->
-<a href="video.html">Video</a>
+                </nav>
+                <script>
+                window.onload = function() {
+                    // 1. Check the "memory bank" for the login flag
+                    const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
 
-<!-- Link to the Schedule page -->
-<a href="schedule.html">Schedule</a>
+                    if (isLoggedIn) {
+                        // 2. Find ALL links with the "protected-link" class
+                        const privateLinks = document.querySelectorAll('.protected-link');
+                        
+                        // 3. Loop through them and make them visible
+                        privateLinks.forEach(link => {link.style.display = 'inline-block';});
 
-<!-- Link to the Feedback page -->
-<a href="feedback.html">Feedback</a>
-
-</nav>
-
+                        // 4. Hide the Login link since they are already in
+                        const loginBtn = document.getElementById('login-link');
+                        if (loginBtn) loginBtn.style.display = 'none';
+                    }
+                }
+            </script>
+        </div>
+    </div>
 </header>
 
 
 
-
-<!-- Main content area where the historical information about AlUla is displayed -->
 <div id="main-content">
+    
+    <section class="history-row">
+        <div class="history-image">
+            <img src="../images/2560px-Madaan-saleh-1767900822.webp" alt="Hegra">
+        </div>
+        <div class="history-text">
+            <h3>The Nabataean Period</h3>
+            <!-- Paragraph explaining the Nabataean civilization -->
+            <p>
+            One of the most famous historical periods in AlUla was the Nabataean era.
+            The Nabataeans were highly skilled traders and builders who carved
+            magnificent tombs directly into sandstone mountains.
+            </p>
 
-<!-- Page title -->
-<h2>History of AlUla</h2>
+            <!-- Paragraph describing the UNESCO World Heritage site -->
+            <p>
+            Their most famous site is Hegra (Madain Saleh), which is recognized today
+            as Saudi Arabia’s first UNESCO World Heritage Site. The site contains
+            dozens of monumental tombs carved into desert cliffs.
+            </p>
+        </div>
+    </section>
 
-<!-- Introduction paragraph describing the historical importance of AlUla -->
-<p>
-AlUla is one of the most historically rich regions in the Arabian Peninsula.
-For thousands of years it served as an important center of trade, culture,
-and civilization. Ancient caravan routes once passed through AlUla,
-connecting southern Arabia with the Mediterranean world.
-</p>
+    <section class="history-row reverse">
+        <div class="history-text">
+            <h3>Historic Architecture</h3>
+            <!-- Paragraph explaining the traditional architecture -->
+            <p>
+            AlUla is also known for its traditional architecture and historic
+            settlements. The old towns reflect the lifestyle and culture of
+            communities that lived in the region centuries ago.
+            </p>
 
+            <!-- Paragraph describing the restoration of historic villages -->
+            <p>
+            Many historic villages have been carefully restored to preserve the
+            heritage of the region and allow visitors to experience the rich
+            history of AlUla.
+            </p>
+        </div>
+        <div class="history-image">
+            <img src="../images/2_3nd.webp" alt="Architecture">
+        </div>
+    </section>
 
-
-<!-- Section about ancient civilizations -->
-<h3 id="civilizations">Ancient Civilizations</h3>
-
-<!-- Paragraph describing the civilizations that lived in AlUla -->
-<p>
-Several ancient civilizations lived in AlUla and contributed to its
-historical importance. These civilizations built settlements,
-temples, and tombs that demonstrate the cultural and architectural
-development of the region.
-</p>
-
-<!-- Unordered list of civilizations that existed in AlUla -->
-<ul>
-
-<li>The Dadanite Kingdom</li>
-
-<li>The Lihyanite Civilization</li>
-
-<li>The Nabataean Civilization</li>
-
-</ul>
-
-
-
-<!-- Section about the Nabataean period -->
-<h3 id="nabataean">The Nabataean Period</h3>
-
-<!-- Image showing Hegra (Madain Saleh) tombs -->
-<img src="../images/2560px-Madaan-saleh-1767900822.webp" alt="Hegra Madain Saleh tombs in AlUla" width="500">
-
-<!-- Paragraph explaining the Nabataean civilization -->
-<p>
-One of the most famous historical periods in AlUla was the Nabataean era.
-The Nabataeans were highly skilled traders and builders who carved
-magnificent tombs directly into sandstone mountains.
-</p>
-
-<!-- Paragraph describing the UNESCO World Heritage site -->
-<p>
-Their most famous site is Hegra (Madain Saleh), which is recognized today
-as Saudi Arabia’s first UNESCO World Heritage Site. The site contains
-dozens of monumental tombs carved into desert cliffs.
-</p>
-
-
-
-<!-- Section about historical architecture -->
-<h3 id="heritage">Historic Architecture</h3>
-
-<!-- Image showing traditional architecture in AlUla -->
-<img src="../images/2_3nd.webp" alt="Historic architecture in AlUla" width="500">
-
-<!-- Paragraph explaining the traditional architecture -->
-<p>
-AlUla is also known for its traditional architecture and historic
-settlements. The old towns reflect the lifestyle and culture of
-communities that lived in the region centuries ago.
-</p>
-
-<!-- Paragraph describing the restoration of historic villages -->
-<p>
-Many historic villages have been carefully restored to preserve the
-heritage of the region and allow visitors to experience the rich
-history of AlUla.
-</p>
-
-
-
-<!-- Section describing modern development of AlUla -->
-<h3 id="modern">AlUla in Modern Times</h3>
-
-<!-- Paragraph about tourism development -->
-<p>
-In recent years, AlUla has become one of the most important tourism
-destinations in Saudi Arabia. Large efforts are being made to preserve
-its historical landmarks while developing sustainable tourism.
-</p>
-
-<!-- Paragraph about modern cultural events -->
-<p>
-International festivals, exhibitions, and cultural events are now
-hosted in AlUla, making it a global destination that blends
-ancient heritage with modern experiences.
-</p>
-
-
-<!-- Quote highlighting the historical significance of AlUla -->
-<blockquote>
-"The history of AlUla reflects the story of civilizations that shaped
-the cultural heritage of the Arabian Peninsula."
-</blockquote>
-
-<!-- Citation for the quote -->
-<p>
-<cite>Historical Research on Arabian Civilizations</cite>
-</p>
+    <section id="quote-section">
+    <blockquote class="fancy-quote">
+        "The history of AlUla reflects the story of civilizations that shaped
+        the cultural heritage of the Arabian Peninsula."
+    </blockquote>
+    <cite class="quote-author">— Historical Research on Arabian Civilizations</cite>
+</section>
 
 </div>
-
 
 
 <!-- Footer section displayed at the bottom of the page -->

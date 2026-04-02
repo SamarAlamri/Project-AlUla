@@ -19,222 +19,125 @@
 <body>
 
 <!-- Header section that contains the logo, website title, and navigation menu -->
-<header>
+ <header id="main-hero">
+    <div class="hero-overlay">
+        <div class="hero-content">
+            <h1>AlUla 360</h1>
+            <p>A world of revitalisation</p>
+            <nav >
+                <!-- Link to the Home page -->
+                <a href="index.html">Home</a>
 
-<!-- Website logo image -->
-<img src="images/logo.png" alt="AlUla Logo" id="site-logo">
+                <!-- Link to the History page -->
+                <a href="pages/history.html">History</a>
 
-<a href="pages/Signin.html" id="Signin-icon">
-        <img src="images/user.png" alt="Sign In">
-        <span>Sign In</span>
-    </a>
+                <!-- Link to the Video page -->
+                <a href="pages/video.html">Video</a>
 
-<!-- Main title of the website -->
-<h1>AlUla 360</h1>
+                <a href="pages/services.html" class="protected-link" style="display: none;">Services</a>
 
-<!-- Navigation menu that allows users to move between pages -->
-<nav>
+                <a href="pages/mytour.html" class="protected-link" style="display: none;">My Tour</a>
 
-<!-- Link to the Home page -->
-<a href="index.html">Home</a>
+                <!-- Link to the Feedback page -->
+                <a href="pages/feedback.html">Feedback</a>
 
-<!-- Link to the History page -->
-<a href="pages/history.html">History</a>
+                <!-- Link to the login page -->
+                <a href="pages/SignIn.html" id="login-link">SignIn/SignUp</a>
 
-<!-- Link to the Services page -->
-<a href="pages/services.html">Services</a>
+                <a href=null class="protected-link" style="display: none;">welcome!</a>
 
-<!-- Link to the Video page -->
-<a href="pages/video.html">Video</a>
+                </nav>
+                <script>
+                window.onload = function() {
+                    // 1. Check the "memory bank" for the login flag
+                    const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
 
-<!-- Link to the Schedule page -->
-<a href="pages/schedule.html">Schedule</a>
+                    if (isLoggedIn) {
+                        // 2. Find ALL links with the "protected-link" class
+                        const privateLinks = document.querySelectorAll('.protected-link');
+                        
+                        // 3. Loop through them and make them visible
+                        privateLinks.forEach(link => {link.style.display = 'inline-block';});
 
-<!-- Link to the Feedback page -->
-<a href="pages/feedback.html">Feedback</a>
-
-</nav>
-
+                        // 4. Hide the Login link since they are already in
+                        const loginBtn = document.getElementById('login-link');
+                        if (loginBtn) loginBtn.style.display = 'none';
+                    }
+                }
+            </script>
+        </div>
+    </div>
 </header>
 
+<div id="hero-header">
+    
+    
+    <div id="hero-text-content">
+        <h2>Explore AlUla</h2>
+        <!-- Introduction paragraph about AlUla -->
+        <p>
+        AlUla is one of the most breathtaking travel destinations in Saudi Arabia.
+        Located in the northwest of the Kingdom, AlUla is famous for its stunning
+        desert landscapes, ancient heritage sites, and unique rock formations.
+        Visitors from around the world come to explore its natural beauty and
+        discover the stories of civilizations that lived here thousands of years ago.
+        </p>
+
+        <!-- Additional description about tourism and culture in AlUla -->
+        <p>
+        The region has become a major cultural and tourism destination,
+        combining archaeological wonders, natural scenery, and rich traditions.
+        The dramatic sandstone mountains, wide desert valleys, and historical
+        sites create a unique experience for visitors seeking adventure,
+        history, and culture.
+        </p>
+    </div>
+</div>
+
+<div id="grid-container">
+
+    <section class="grid-item">
+        <h3 id="landmarks">Key Landmarks</h3>
+        <ul>
+            <li>Hegra (Madain Saleh)</li>
+            <li>Elephant Rock</li>
+            <li>AlUla Old Town</li>
+            <li>Dadan Archaeological Site</li>
+        </ul>
+    </section>
+
+    <section class="grid-item">
+        <h3 id="activities">Things You Can Do</h3>
+        <ol>
+            <li>Guided heritage tours</li>
+            <li>Archaeological sites</li>
+            <li>Desert hiking</li>
+            <li>Cultural festivals</li>
+            <li>Stargazing</li>
+        </ol>
+    </section>
+
+    <section class="grid-item">
+        <h3>Adventure & Outdoors</h3>
+        <ul>
+            <li>Rock climbing</li>
+            <li>Desert camping</li>
+            <li>Photography tours</li>
+            <li>Cycling tours</li>
+            <li>Exploration trips</li>
+        </ul>
+    </section>
+
+</div>
 
 
-<!-- Main content area of the webpage -->
-<div id="main-content">
+<section id="quote-section">
+    <blockquote class="fancy-quote">
+        "AlUla is where history, culture, and nature come together to create a truly unforgettable travel experience."
+    </blockquote>
+    <cite class="quote-author">— Saudi Tourism Authority</cite>
+</section>
 
-<!-- Section title -->
-<h2>Explore AlUla</h2>
-
-<!-- Image showing the landscape of AlUla -->
-<img src="images/174109.jpg" alt="Beautiful landscape of AlUla" width="600">
-
-
-<!-- Introduction paragraph about AlUla -->
-<p>
-AlUla is one of the most breathtaking travel destinations in Saudi Arabia.
-Located in the northwest of the Kingdom, AlUla is famous for its stunning
-desert landscapes, ancient heritage sites, and unique rock formations.
-Visitors from around the world come to explore its natural beauty and
-discover the stories of civilizations that lived here thousands of years ago.
-</p>
-
-<!-- Additional description about tourism and culture in AlUla -->
-<p>
-The region has become a major cultural and tourism destination,
-combining archaeological wonders, natural scenery, and rich traditions.
-The dramatic sandstone mountains, wide desert valleys, and historical
-sites create a unique experience for visitors seeking adventure,
-history, and culture.
-</p>
-
-
-<!-- History section -->
-<h3 id="history">Ancient History</h3>
-
-<!-- Paragraph explaining AlUla's role in ancient trade routes -->
-<p>
-AlUla played an important role in ancient trade routes that connected
-Arabia with neighboring civilizations. Merchants traveling across the
-desert used AlUla as a resting point where they could exchange goods
-and gather supplies before continuing their journeys.
-</p>
-
-<!-- Paragraph about archaeological discoveries -->
-<p>
-Archaeological discoveries in the region show that several civilizations
-settled in AlUla, leaving behind remarkable monuments, inscriptions,
-and architectural structures that still exist today.
-</p>
-
-
-<!-- Landmarks section -->
-<h3 id="landmarks">Key Landmarks</h3>
-
-<!-- Unordered list of famous landmarks in AlUla -->
-<ul>
-
-<li>Hegra (Madain Saleh) – Saudi Arabia’s first UNESCO World Heritage Site</li>
-
-<li>Elephant Rock – a giant sandstone formation shaped like an elephant</li>
-
-<li>AlUla Old Town – a historic village with traditional architecture</li>
-
-<li>Dadan Archaeological Site – ruins of an ancient Arabian kingdom</li>
-
-</ul>
-
-
-<!-- Activities section -->
-<h3 id="activities">Things You Can Do in AlUla</h3>
-
-<!-- Ordered list describing tourist activities -->
-<ol>
-
-<li>Join guided heritage tours</li>
-
-<li>Explore ancient archaeological sites</li>
-
-<li>Enjoy desert hiking and nature walks</li>
-
-<li>Experience cultural festivals and local traditions</li>
-
-<li>Enjoy stargazing in the desert night sky</li>
-
-</ol>
-
-
-<!-- Nature section -->
-<h3 id="nature">Natural Beauty of AlUla</h3>
-
-<!-- Paragraph describing AlUla's landscapes -->
-<p>
-AlUla is famous for its dramatic desert landscapes and unique rock
-formations that have been shaped by wind and nature over thousands
-of years. The region offers breathtaking views, peaceful valleys,
-and unforgettable sunsets.
-</p>
-
-<!-- Additional description about exploring nature -->
-<p>
-Visitors can explore surrounding mountains, walk through narrow
-canyons, and discover natural wonders that make AlUla one of the
-most beautiful destinations in the Middle East.
-</p>
-
-
-<!-- Culture section -->
-<h3 id="culture">Cultural Experiences</h3>
-
-<!-- Paragraph describing cultural experiences -->
-<p>
-AlUla offers a rich cultural experience where visitors can enjoy
-local festivals, traditional markets, art exhibitions, and cultural
-events that celebrate the heritage of the region.
-</p>
-
-<!-- Paragraph about traditional crafts and hospitality -->
-<p>
-Traditional crafts, local food, and cultural performances allow
-visitors to experience the authentic hospitality and traditions
-of Saudi Arabia.
-</p>
-
-
-<!-- Adventure section -->
-<h3>Adventure and Outdoor Activities</h3>
-
-<!-- Paragraph describing adventure activities -->
-<p>
-For adventure seekers, AlUla provides exciting outdoor experiences
-such as desert hiking, rock climbing, cycling tours, and guided
-exploration trips across the beautiful desert landscapes.
-</p>
-
-<!-- List of outdoor activities -->
-<ul>
-
-<li>Desert hiking tours</li>
-
-<li>Rock climbing adventures</li>
-
-<li>Desert camping experiences</li>
-
-<li>Photography tours</li>
-
-<li>Historical exploration tours</li>
-
-</ul>
-
-
-<!-- Section explaining why people should visit AlUla -->
-<h3>Why Visit AlUla?</h3>
-
-<p>
-AlUla combines history, nature, culture, and adventure in one
-extraordinary destination. Visitors can discover ancient civilizations,
-experience breathtaking landscapes, and enjoy unforgettable cultural
-experiences in this remarkable region.
-</p>
-
-
-<!-- Quote highlighting the importance of AlUla -->
-<blockquote>
-AlUla is where history, culture, and nature come together to create
-a truly unforgettable travel experience.
-</blockquote>
-
-<!-- Citation source for the quote -->
-<p>
-<cite>Saudi Tourism Authority</cite>
-</p>
-
-
-<!-- Instruction paragraph guiding users to other pages -->
-<p>
-Use the navigation menu to learn more about the history of AlUla,
-view our tour schedule, and share your experience with us through
-the feedback page.
-</p>
 
 </div>
 

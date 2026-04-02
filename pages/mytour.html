@@ -1,0 +1,119 @@
+<!-- Name: Zain Aljifry, ID: 2107808, Section: DAR, Date: 8 march | Name: Samar Alamri, ID: 2206831, Section: DAR, Date: 8 march -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Defines the character encoding used for the webpage -->
+    <meta charset="UTF-8">
+
+    <!-- Title displayed in the browser tab -->
+    <title>AlUla 360 - Tour Schedule</title>
+
+    <!-- Link to the main stylesheet used for screen display -->
+    <link rel="stylesheet" href="../global/main.css">
+
+    <!-- Link to a special stylesheet used when the page is printed -->
+    <link rel="stylesheet" href="../global/print.css" media="print">
+
+</head>
+
+<body>
+
+    <!-- Header section containing the website logo, title, and navigation menu -->
+<header id="main-hero" class="slim-header schedule-hero">
+    <div class="hero-overlay">
+        <div class="hero-content">
+            <h1>My Tour</h1>
+            <p>Your Personalized AlUla Itinerary (Example)</p>
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="history.html">History</a>
+                <a href="video.html">Video</a>
+                <a href="services.html" class="protected-link" style="display: none;">Services</a>
+                <a href="mytour.html" class="protected-link" style="display: none;">My Tour</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="SignIn.html" id="login-link">SignIn/SignUp</a>
+                <a href=null class="protected-link" style="display: none;">welcome!</a>
+            </nav>
+            <script>
+                window.onload = function() {
+                    // 1. Check the "memory bank" for the login flag
+                    const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+
+                    if (isLoggedIn) {
+                        // 2. Find ALL links with the "protected-link" class
+                        const privateLinks = document.querySelectorAll('.protected-link');
+                        
+                        // 3. Loop through them and make them visible
+                        privateLinks.forEach(link => {link.style.display = 'inline-block';});
+
+                        // 4. Hide the Login link since they are already in
+                        const loginBtn = document.getElementById('login-link');
+                        if (loginBtn) loginBtn.style.display = 'none';
+                    }
+                }
+            </script>
+        </div>
+    </div>
+</header>
+
+
+    <!-- Main content area where the tour schedule is displayed -->
+    <div id="main-content">
+    <div class="itinerary-container">
+        <h2>My Tour Plan</h2>
+        <p class="intro-text">
+            This is an example of how your custom tour will appear. Once you select your 
+            preferred services, your personalized schedule will be generated here.
+        </p>
+
+        <table class="modern-table">
+            <caption>Proposed 3-Day Exploration Schedule</caption>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Day 1 (Sun)</th>
+                    <th>Day 2 (Mon)</th>
+                    <th>Day 3 (Tue)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>09:00 AM</th>
+                    <td rowspan="2" class="highlight-cell">Old Town Walking Tour</td>
+                    <td>Elephant Rock Visit</td>
+                    <td>Dadan Museum</td>
+                </tr>
+                <tr>
+                    <th>10:00 AM</th>
+                    <td>Coffee Break</td>
+                    <td>Art Workshop</td>
+                </tr>
+                <tr>
+                    <th>11:00 AM</th>
+                    <td colspan="3" class="break-row">Lunch Break & Mid-day Prayer</td>
+                </tr>
+                <tr>
+                    <th>01:00 PM</th>
+                    <td>Hegra Heritage Site</td>
+                    <td>Desert Stargazing Prep</td>
+                    <td>Local Craft Market</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+    <!-- Footer section displayed at the bottom of the page -->
+    <footer>
+
+        <!-- Copyright notice -->
+        <p>&copy; 2026 AlUla 360 Project</p>
+
+    </footer>
+
+</body>
+</html>

@@ -18,163 +18,176 @@
 
 <body>
 
-    <!-- Header section containing the website logo, title, and navigation menu -->
-    <header>
+    
+<header id="main-hero" class="feedback-hero slim-header">
+    <div class="hero-overlay">
+        <div class="hero-content">
+            <h1>Your Voice</h1>
+            <p>Share your AlUla journey with us</p>
+            <nav >
+                <!-- Link to the Home page -->
+                <a href="../index.html">Home</a>
 
-<!-- Website logo -->
-<img src="../images/logo.png" alt="AlUla Logo" id="site-logo">
+                <!-- Link to the History page -->
+                <a href="history.html">History</a>
 
-<a href="../pages/Signin.html" id="Signin-icon">
-        <img src="../images/user.png" alt="Sign In">
-        <span>Sign In</span>
-    </a>
+                <!-- Link to the Video page -->
+                <a href="video.html">Video</a>
 
-<!-- Main website title -->
-<h1>AlUla 360</h1>
+                <a href="services.html" class="protected-link" style="display: none;">Services</a>
 
-<!-- Navigation menu allowing users to move between pages -->
-<nav>
+                <a href="mytour.html" class="protected-link" style="display: none;">My Tour</a>
 
-<!-- Link to the Home page -->
-<a href="../index.html">Home</a>
+                <!-- Link to the Feedback page -->
+                <a href="feedback.html">Feedback</a>
 
-<!-- Link to the History page -->
-<a href="history.html">History</a>
+                <!-- Link to the login page -->
+                <a href="SignIn.html" id="login-link">SignIn/SignUp</a>
 
-<!-- Link to the Services page -->
-<a href="services.html">Services</a>
+                <a href=null class="protected-link" style="display: none;">welcome!</a>
 
-<!-- Link to the Video page -->
-<a href="video.html">Video</a>
+                </nav>
+                <script>
+                window.onload = function() {
+                    // 1. Check the "memory bank" for the login flag
+                    const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
 
-<!-- Link to the Schedule page -->
-<a href="schedule.html">Schedule</a>
+                    if (isLoggedIn) {
+                        // 2. Find ALL links with the "protected-link" class
+                        const privateLinks = document.querySelectorAll('.protected-link');
+                        
+                        // 3. Loop through them and make them visible
+                        privateLinks.forEach(link => {link.style.display = 'inline-block';});
 
-<!-- Link to the Feedback page -->
-<a href="feedback.html">Feedback</a>
-
-</nav>
-
+                        // 4. Hide the Login link since they are already in
+                        const loginBtn = document.getElementById('login-link');
+                        if (loginBtn) loginBtn.style.display = 'none';
+                    }
+                }
+            </script>
+        </div>
+    </div>
 </header>
 
+<!-- Main content area of the feedback page -->
+<div id="main-content">
+    <div class="form-container">
 
-    <!-- Main content area of the feedback page -->
-    <div id="main-content">
+    <!-- Page heading -->
+    <h2>We Value Your Feedback</h2>
 
-        <!-- Page heading -->
-        <h2>We Value Your Feedback</h2>
+    <!-- Short description encouraging users to share their experience -->
+    <p>Please tell us about your experience in AlUla.</p>
 
-        <!-- Short description encouraging users to share their experience -->
-        <p>Please tell us about your experience in AlUla.</p>
+    <!-- Feedback form where users can submit their information and opinions -->
+    <form action="#" method="post" onsubmit="return validateForm();">
+        
+        <!-- Input field for the user's full name -->
+        <p>
 
-        <!-- Feedback form where users can submit their information and opinions -->
-        <form action="#" method="post" onsubmit="return validateForm();">
-            
-            <!-- Input field for the user's full name -->
-            <p>
+            <!-- Label describing the input -->
+            <label for="username">Full Name:</label><br>
 
-                <!-- Label describing the input -->
-                <label for="username">Full Name:</label><br>
+            <!-- Text input field where the user enters their name -->
+            <input type="text" id="username" name="username" required>
 
-                <!-- Text input field where the user enters their name -->
-                <input type="text" id="username" name="username" required>
+        </p>
+        
+        <!-- Input field for the user's email -->
+        <p>
 
-            </p>
-            
-            <!-- Input field for the user's email -->
-            <p>
+            <!-- Email label -->
+            <label for="useremail">Email Address:</label><br>
 
-                <!-- Email label -->
-                <label for="useremail">Email Address:</label><br>
+            <!-- Email input field that requires a valid email format -->
+            <input type="email" id="useremail" name="useremail" required>
 
-                <!-- Email input field that requires a valid email format -->
-                <input type="email" id="useremail" name="useremail" required>
+        </p>
 
-            </p>
+        <!-- Radio buttons allowing the user to rate their visit -->
+        <p>How would you rate your visit? <br>
 
-            <!-- Radio buttons allowing the user to rate their visit -->
-            <p>How would you rate your visit? <br>
+            <!-- Option 1 -->
+            <input type="radio" id="good" name="rating" value="Good">
+            <label for="good">Good</label>
 
-                <!-- Option 1 -->
-                <input type="radio" id="good" name="rating" value="Good">
-                <label for="good">Good</label>
+            <!-- Option 2 -->
+            <input type="radio" id="average" name="rating" value="Average">
+            <label for="average">Average</label>
 
-                <!-- Option 2 -->
-                <input type="radio" id="average" name="rating" value="Average">
-                <label for="average">Average</label>
+            <!-- Option 3 -->
+            <input type="radio" id="poor" name="rating" value="Poor">
+            <label for="poor">Poor</label>
 
-                <!-- Option 3 -->
-                <input type="radio" id="poor" name="rating" value="Poor">
-                <label for="poor">Poor</label>
+        </p>
 
-            </p>
+        <!-- Checkbox options for activities visitors enjoyed -->
+        <p>Which activities did you enjoy? (Select all that apply):<br>
 
-            <!-- Checkbox options for activities visitors enjoyed -->
-            <p>Which activities did you enjoy? (Select all that apply):<br>
+            <!-- Activity option 1 -->
+            <input type="checkbox" id="hiking" name="activity[]" value="Hiking">
+            <label for="hiking">Hiking</label><br>
 
-                <!-- Activity option 1 -->
-                <input type="checkbox" id="hiking" name="activity[]" value="Hiking">
-                <label for="hiking">Hiking</label><br>
+            <!-- Activity option 2 -->
+            <input type="checkbox" id="tours" name="activity[]" value="Tours">
+            <label for="tours">Heritage Tours</label><br>
 
-                <!-- Activity option 2 -->
-                <input type="checkbox" id="tours" name="activity[]" value="Tours">
-                <label for="tours">Heritage Tours</label><br>
+            <!-- Activity option 3 -->
+            <input type="checkbox" id="stargazing" name="activity[]" value="Stargazing">
+            <label for="stargazing">Stargazing</label>
 
-                <!-- Activity option 3 -->
-                <input type="checkbox" id="stargazing" name="activity[]" value="Stargazing">
-                <label for="stargazing">Stargazing</label>
+        </p>
 
-            </p>
+        <!-- Dropdown menu allowing users to choose their travel type -->
+        <p>
 
-            <!-- Dropdown menu allowing users to choose their travel type -->
-            <p>
+            <!-- Label for the dropdown -->
+            <label for="travel-mode">Preferred Travel Mode:</label><br>
 
-                <!-- Label for the dropdown -->
-                <label for="travel-mode">Preferred Travel Mode:</label><br>
+            <!-- Select menu -->
+            <select id="travel-mode" name="travel-mode">
 
-                <!-- Select menu -->
-                <select id="travel-mode" name="travel-mode">
+                <!-- Default option -->
+                <option value="">Select One</option>
 
-                    <!-- Default option -->
-                    <option value="">Select One</option>
+                <!-- Travel options -->
+                <option value="solo">Solo Traveler</option>
+                <option value="family">Family Group</option>
+                <option value="friends">Friends</option>
 
-                    <!-- Travel options -->
-                    <option value="solo">Solo Traveler</option>
-                    <option value="family">Family Group</option>
-                    <option value="friends">Friends</option>
+            </select>
 
-                </select>
+        </p>
 
-            </p>
+        <!-- Text area where users can write additional comments -->
+        <p>
 
-            <!-- Text area where users can write additional comments -->
-            <p>
+            <!-- Label describing the textarea -->
+            <label for="comments">Additional Comments:</label><br>
 
-                <!-- Label describing the textarea -->
-                <label for="comments">Additional Comments:</label><br>
+            <!-- Multi-line text input -->
+            <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
 
-                <!-- Multi-line text input -->
-                <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+        </p>
 
-            </p>
+        <!-- Buttons for submitting the form or clearing the inputs -->
+        <p>
 
-            <!-- Buttons for submitting the form or clearing the inputs -->
-            <p>
+            <!-- Submit button -->
+            <input type="submit" value="Submit Feedback">
 
-                <!-- Submit button -->
-                <input type="submit" value="Submit Feedback">
+            <!-- Reset button that clears the form -->
+            <input type="reset" value="Clear Form">
 
-                <!-- Reset button that clears the form -->
-                <input type="reset" value="Clear Form">
+        </p>
 
-            </p>
+    </form>
 
-        </form>
-
-        <!-- Message area where JavaScript can display validation messages -->
-        <p id="formMessage"></p>
-
+    <!-- Message area where JavaScript can display validation messages -->
+    <p id="formMessage"></p>
     </div>
+
+</div>
 
     <!-- Footer section displayed at the bottom of the page -->
     <footer>

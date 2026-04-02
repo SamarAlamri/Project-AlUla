@@ -90,3 +90,8 @@ function validateForm() {
     /* Prevent page reload (keeps the message visible) */
     return false;
 }
+
+function showServices() {
+  document.getElementById('services-link').style.display = 'inline-block';
+  alert('You are now "signed in"!');
+}
