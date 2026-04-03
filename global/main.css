@@ -14,7 +14,7 @@ font-family:Arial, sans-serif;
 /* Sets the background color of the page */
 background-color:#f4f4f4;
 
-color: #2c1810;
+color: #4a3a33;
 
 /* Removes default browser margin */
 margin:0;
@@ -163,7 +163,7 @@ nav a:hover {
 #main-content h2 {
     font-size: 1.8rem;
     color: #5a1a0a;
-    text-align: left;
+    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -322,6 +322,8 @@ nav a:hover {
 
 .history-text {
     flex: 1;
+    font-size: 1.1rem;
+    
 }
 
 .history-text h3 {
@@ -340,8 +342,7 @@ nav a:hover {
 }
 
 .video-page-content {
-    background-color: #1a1a1a !important; /* Dark background for cinema feel */
-    color: #fdfaf5; /* Light sand text for contrast */
+    background-color: #fdfaf5 !important; /* Dark background for cinema feel */
     margin-top: 0 !important;
     margin-bottom: 0 !important;   
     padding: 60px 0;
@@ -360,18 +361,6 @@ nav a:hover {
 .video-wrapper video {
     width: 100%;
     display: block;
-}
-
-.video-description {
-    max-width: 800px;
-    margin: 40px auto;
-    text-align: center;
-    padding: 0 20px;
-}
-
-.video-description h2 {
-    color: #d4a373; /* Gold/Sand color for the heading */
-    font-size: 2.5rem;
 }
 
 /* ========================= */
@@ -400,6 +389,7 @@ nav a:hover {
 .form-container p {
     text-align: left;
     margin-bottom: 30px;
+    color: #4a3a33;
 }
 
 .center-text {
@@ -563,7 +553,7 @@ input[type="submit"]:hover {
 
 .intro-text {
     font-style: italic;
-    color: #7a3b1d;
+    color: #4a3a33;
     margin-bottom: 30px;
 }
 
@@ -572,6 +562,7 @@ input[type="submit"]:hover {
     width: 100%;
     border-collapse: collapse;
     background-color: #ffffff;
+    color: #4a3a33;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -614,16 +605,8 @@ input[type="submit"]:hover {
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-.example-title {
-    margin-top: 40px;
-    color: #5a1a0a;
-}
 
-.example-intro {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #7a3b1d;
-}
+
 
 /* ========================= */
 /* Footer Styling */
