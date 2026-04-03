@@ -91,7 +91,3 @@ function validateForm() {
     return false;
 }
 
-function showServices() {
-  document.getElementById('services-link').style.display = 'inline-block';
-  alert('You are now "signed in"!');
-}
