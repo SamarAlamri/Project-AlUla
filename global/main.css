@@ -152,11 +152,12 @@ nav a:hover {
 /* ========================= */
 
 #main-content {
-    margin: 20px auto; 
-    max-width: 1100px;  
-    padding: 40px;
-    background-color: white;
-    border: 1px solid #ddd;
+    width: 100%;
+    max-width: none;   
+    margin: 0;        
+    padding: 0;        
+    background: none;  
+    border: none;      
 }
 
 /* Style the Hero Container */
@@ -375,8 +376,8 @@ nav a:hover {
 }
 
 .form-container {
-    max-width: 700px;
-    margin: 0 auto;
+    max-width: 100%;
+    margin: none;
     background: #ffffff;
     padding: 40px;
     border-radius: 15px;
