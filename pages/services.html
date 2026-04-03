@@ -9,7 +9,7 @@
 <meta charset="UTF-8">
 
 <!-- Page title shown in browser tab -->
-<title>Explore AlUla - Services</title>
+<title>Explore AlUla - Themed Journeys</title>
 
 <!-- Link to the main CSS file -->
 <link rel="stylesheet" href="../global/main.css">
@@ -25,7 +25,7 @@
 <header id="main-hero" class="slim-header services-hero">
     <div class="hero-overlay">
         <div class="hero-content">
-            <h1>Our Services</h1>
+            <h1>Themed Journeys</h1>
             <p>Experience the Wonders of AlUla</p>
             <nav >
             <!-- Link to the Home page -->
@@ -37,7 +37,7 @@
                 <!-- Link to the Video page -->
                 <a href="video.html">Video</a>
 
-                <a href="services.html">Services</a>
+                <a href="services.html">Themed Journeys</a>
 
                 <a href="mytour.html" >My Tour</a>
 
@@ -61,62 +61,81 @@
     <h2>Tourism Services in AlUla</h2>
 
     <p>
-        AlUla offers a wide range of tourism services designed to help visitors
-        explore the region comfortably and safely. These services allow tourists
-        to experience the historical, cultural, and natural beauty of AlUla.
+        Discover AlUla through carefully designed themed journeys that combine multiple experiences into one seamless trip.
+        Each journey follows a planned schedule of activities, allowing you to explore the destination without the stress of planning.
+        Choose between full-day or half-day trips based on your time and interests.
     </p>
 
     <div class="services-grid">
-
-        <section class="service-card" id="tours">
-            <h3>Guided Heritage Tours</h3>
+        <section class="service-card">
+            <h3>Heritage Discovery Journey</h3>
             <p>
-                Explore landmarks with professional guides who share ancient stories.
+                Step into the past and explore AlUla’s most iconic historical landmarks through a guided cultural experience.
             </p>
+
             <ul>
-                <li>Hegra historical tours</li>
-                <li>Dadan archaeological tours</li>
-                <li>Old Town cultural tours</li>
+                <li>Visit Hegra (UNESCO World Heritage Site)</li>
+                <li>Explore Dadan archaeological site</li>
+                <li>Walk through AlUla Old Town</li>
             </ul>
+
+            <p><strong>Duration:</strong> Full Day / Half Day</p>
+            <p><strong>Best for:</strong> History lovers and cultural explorers</p>
+            <button class="select-btn">Choose This Journey</button>
         </section>
 
-        <section class="service-card" id="transport">
-            <h3>Transportation Services</h3>
+        <section class="service-card">
+            <h3>Adventure & Nature Journey</h3>
             <p>
-                Travel comfortably between AlUla’s main attractions.
+                Experience the thrill of AlUla’s landscapes with exciting outdoor activities in the desert.
             </p>
-            <ul>
-                <li>Tour buses</li>
-                <li>Private transportation</li>
-                <li>Airport pickup services</li>
-            </ul>
-        </section>
 
-        <section class="service-card" id="events">
-            <h3>Cultural Events</h3>
-            <p>
-                Experience festivals, art, and heritage celebrations.
-            </p>
             <ul>
-                <li>Winter at Tantora Festival</li>
-                <li>Art exhibitions</li>
-                <li>Traditional markets</li>
-            </ul>
-        </section>
-
-        <section class="service-card" id="adventure">
-            <h3>Adventure Activities</h3>
-            <p>
-                Enjoy thrilling outdoor experiences in the desert.
-            </p>
-            <ol>
-                <li>Desert hiking</li>
-                <li>Rock climbing</li>
-                <li>Hot air balloon rides</li>
+                <li>Desert hiking trails</li>
+                <li>Rock climbing experience</li>
+                <li>Hot air balloon ride</li>
                 <li>Desert camping</li>
-            </ol>
+            </ul>
+
+            <p><strong>Duration:</strong> Full Day</p>
+            <p><strong>Best for:</strong> Adventure seekers and nature lovers</p>
+            <button class="select-btn">Choose This Journey</button>
         </section>
 
+        <section class="service-card">
+            <h3>Culture & Arts Journey</h3>
+            <p>
+                Immerse yourself in AlUla’s vibrant cultural scene through art, festivals, and local traditions.
+            </p>
+
+            <ul>
+                <li>Visit art exhibitions</li>
+                <li>Attend seasonal festivals</li>
+                <li>Explore traditional markets</li>
+            </ul>
+
+            <p><strong>Duration:</strong> Half Day / Evening</p>
+            <p><strong>Best for:</strong> Culture lovers and relaxed experiences</p>
+            <button class="select-btn">Choose This Journey</button>
+        </section>
+
+        <section class="service-card">
+            <h3>Relaxed Highlights Tour</h3>
+            <p>
+                A shorter journey designed for visitors who want a light and enjoyable introduction to AlUla.
+            </p>
+
+            <ul>
+                <li>Visit selected landmarks</li>
+                <li>Scenic viewpoints</li>
+                <li>Café or rest stop experience</li>
+            </ul>
+
+            <p><strong>Duration:</strong> Half Day</p>
+            <p><strong>Best for:</strong> Families and casual visitors</p>
+            <button class="select-btn">Choose This Journey</button>
+        </section>
+        
     </div>
 
     <p>
@@ -126,6 +145,26 @@
 
 </div>
 
+<!-- Confirmation Message for the trip selection -->
+<div id="confirmation-message">
+    ✅ Journey selected successfully!
+</div>
+
+<script>
+    const buttons = document.querySelectorAll('.select-btn');
+    const message = document.getElementById('confirmation-message');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            message.classList.add('show');
+
+            // hide after 2 seconds
+            setTimeout(() => {
+                message.classList.remove('show');
+            }, 2000);
+        });
+    });
+</script>
 
 <!-- ================= FOOTER SECTION ================= -->
 <!-- Footer contains copyright information -->
