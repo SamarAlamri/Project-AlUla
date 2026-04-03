@@ -392,14 +392,18 @@ nav a:hover {
 }
 
 .form-container h2 {
-    text-align: center;
+    text-align: center !important;
     color: #5a1a0a;
     font-size: 2.2rem;
 }
 
 .form-container p {
-    text-align: center;
+    text-align: left;
     margin-bottom: 30px;
+}
+
+.center-text {
+    text-align: center !important;
 }
 
 /* Label Styling */
