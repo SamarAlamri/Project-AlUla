@@ -19,18 +19,10 @@
                 <input type="password" id="Signin-pass" name="password" required>
             </p>
             <p>
-                <input type="submit" value="Sign In" onclick="handleLogin()" style="width: 100%;">
+                <a href="../index.html" style="text-decoration: none;">
+                    <input type="submit" value="Sign Up" formaction="../index.html">
+                </a>
             </p>
-
-            <script>
-            function handleLogin() {
-                // 1. Save the "logged in" status to the browser's memory
-                localStorage.setItem('isLoggedIn', 'true');
-                
-                // 2. Redirect back to the home page
-                window.location.href = "../index.html";
-            }
-            </script>
         </form>
         <p>Don't Have An Account? <a href="signup.html">SignUp here</a></p>
     </div>

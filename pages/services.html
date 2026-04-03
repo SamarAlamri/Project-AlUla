@@ -27,34 +27,27 @@
         <div class="hero-content">
             <h1>Our Services</h1>
             <p>Experience the Wonders of AlUla</p>
-            <nav>
+            <nav >
+                <p>7,000 years of human history</p>
+            <!-- Link to the Home page -->
                 <a href="../index.html">Home</a>
+
+                <!-- Link to the History page -->
                 <a href="history.html">History</a>
+
+                <!-- Link to the Video page -->
                 <a href="video.html">Video</a>
-                <a href="services.html" class="protected-link" style="display: none;">Services</a>
-                <a href="mytour.html" class="protected-link" style="display: none;">My Tour</a>
+
+                <a href="services.html">Services</a>
+
+                <a href="mytour.html" >My Tour</a>
+
+                <!-- Link to the Feedback page -->
                 <a href="feedback.html">Feedback</a>
-                <a href="SignIn.html" id="login-link">SignIn/SignUp</a>
-                <a href=null class="protected-link" style="display: none;">welcome!</a>
+
+                <!-- Link to the login page -->
+                <a href="SignIn.html">SignIn/SignUp</a>
             </nav>
-            <script>
-                window.onload = function() {
-                    // 1. Check the "memory bank" for the login flag
-                    const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
-
-                    if (isLoggedIn) {
-                        // 2. Find ALL links with the "protected-link" class
-                        const privateLinks = document.querySelectorAll('.protected-link');
-                        
-                        // 3. Loop through them and make them visible
-                        privateLinks.forEach(link => {link.style.display = 'inline-block';});
-
-                        // 4. Hide the Login link since they are already in
-                        const loginBtn = document.getElementById('login-link');
-                        if (loginBtn) loginBtn.style.display = 'none';
-                    }
-                }
-            </script>
         </div>
     </div>
 </header>

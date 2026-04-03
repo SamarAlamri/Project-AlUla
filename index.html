@@ -34,37 +34,17 @@
                 <!-- Link to the Video page -->
                 <a href="pages/video.html">Video</a>
 
-                <a href="pages/services.html" class="protected-link" style="display: none;">Services</a>
+                <a href="pages/services.html">Services</a>
 
-                <a href="pages/mytour.html" class="protected-link" style="display: none;">My Tour</a>
+                <a href="pages/mytour.html" >My Tour</a>
 
                 <!-- Link to the Feedback page -->
                 <a href="pages/feedback.html">Feedback</a>
 
                 <!-- Link to the login page -->
-                <a href="pages/SignIn.html" id="login-link">SignIn/SignUp</a>
-
-                <a href=null class="protected-link" style="display: none;">welcome!</a>
+                <a href="pages/SignIn.html">SignIn/SignUp</a>
 
                 </nav>
-                <script>
-                window.onload = function() {
-                    // 1. Check the "memory bank" for the login flag
-                    const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
-
-                    if (isLoggedIn) {
-                        // 2. Find ALL links with the "protected-link" class
-                        const privateLinks = document.querySelectorAll('.protected-link');
-                        
-                        // 3. Loop through them and make them visible
-                        privateLinks.forEach(link => {link.style.display = 'inline-block';});
-
-                        // 4. Hide the Login link since they are already in
-                        const loginBtn = document.getElementById('login-link');
-                        if (loginBtn) loginBtn.style.display = 'none';
-                    }
-                }
-            </script>
         </div>
     </div>
 </header>
