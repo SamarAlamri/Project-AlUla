@@ -655,7 +655,7 @@ input[type="submit"]:hover {
 
 #quote-section {
     text-align: center;
-    padding: 80px 20px; /* Big vertical gap to separate it from the grid */
+    padding: 40px 20px; /* Big vertical gap to separate it from the grid */
     background-color: #fdfaf5; /* Matches your sand-colored grid items */
     margin-top: 40px;
     border-top: 1px solid #d4a373;
@@ -663,10 +663,10 @@ input[type="submit"]:hover {
 }
 
 .fancy-quote {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     font-style: italic;
     color: #5a1a0a; /* Deep earth tone */
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto 20px auto;
     line-height: 1.5;
     font-family: "Georgia", serif; /* Serif fonts look more elegant for quotes */
@@ -674,7 +674,7 @@ input[type="submit"]:hover {
 
 .quote-author {
     display: block;
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 3px;
     color: #7a3b1d;
