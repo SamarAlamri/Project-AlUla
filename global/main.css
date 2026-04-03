@@ -602,6 +602,16 @@ input[type="submit"]:hover {
     letter-spacing: 2px;
     text-transform: uppercase;
 }
+.example-title {
+    margin-top: 40px;
+    color: #5a1a0a;
+}
+
+.example-intro {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #7a3b1d;
+}
 
 /* ========================= */
 /* Footer Styling */
