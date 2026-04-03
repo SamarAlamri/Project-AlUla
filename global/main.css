@@ -497,6 +497,43 @@ input[type="submit"]:hover {
     padding-bottom: 10px;
 }
 
+/* Button style */
+.select-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #7a3b1d;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.select-btn:hover {
+    background-color: #5a1a0a;
+}
+
+/* Confirmation message (hidden by default) */
+#confirmation-message {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+/* Show message when active */
+#confirmation-message.show {
+    opacity: 1;
+}
+
 /* ========================= */
 /* Tour Schedule Page Styling */
 /* ========================= */
