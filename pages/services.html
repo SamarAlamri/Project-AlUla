@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 <!-- Name: [Zain Aljifry], ID: [2107808], Section: [DAR], Date: [8 march] -->
 <!-- Name: Talah Faloudah, ID: 2206666, Section: DAR, Date: 8 march -->
+=======
+<!-- Name: [Zain Aljifry], ID: [2107808], Section: [DAR], Date: [8 march] | Name: Samar Alamri, ID: 2206831, Section: DAR, Date: 8 march -->
+>>>>>>> b2ca762b2a0e1e2d11aa3cf23b6506c88ba0ed65
 
 <!DOCTYPE html>
 <html lang="en">
@@ -23,68 +27,36 @@
 <!-- ================= HEADER SECTION ================= -->
 <!-- This section contains the logo, website title, and navigation menu -->
 
-<header>
+<header id="main-hero" class="slim-header services-hero">
+    <div class="hero-overlay">
+        <div class="hero-content">
+            <h1>Our Services</h1>
+            <p>Experience the Wonders of AlUla</p>
+            <nav >
+                <p>7,000 years of human history</p>
+            <!-- Link to the Home page -->
+                <a href="../index.html">Home</a>
 
-<!-- Website Logo -->
-<img src="../images/logo.png" alt="AlUla Logo" id="site-logo">
+                <!-- Link to the History page -->
+                <a href="history.html">History</a>
 
-<a href="../pages/Signin.html" id="Signin-icon">
-        <img src="../images/user.png" alt="Sign In">
-        <span>Sign In</span>
-    </a>
+                <!-- Link to the Video page -->
+                <a href="video.html">Video</a>
 
-<!-- Website Main Title -->
-<h1>AlUla 360</h1>
+                <a href="services.html">Services</a>
 
-<!-- Navigation Menu -->
-<nav>
+                <a href="mytour.html" >My Tour</a>
 
-<!-- Link to Home page -->
-<a href="../index.html">Home</a>
+                <!-- Link to the Feedback page -->
+                <a href="feedback.html">Feedback</a>
 
-<!-- Link to History page -->
-<a href="about.html">History</a>
-
-<!-- Link to Services page -->
-<a href="services.html">Services</a>
-
-<a href="video.html">Video</a>
-
-<!-- Link to Schedule page -->
-<a href="schedule.html">Schedule</a>
-
-<!-- Link to Feedback page -->
-<a href="feedback.html">Feedback</a>
-
-</nav>
-
+                <!-- Link to the login page -->
+                <a href="SignIn.html">SignIn/SignUp</a>
+            </nav>
+        </div>
+    </div>
 </header>
 
-
-<!-- ================= SIDEBAR SECTION ================= -->
-<!-- Sidebar provides quick navigation inside the services page -->
-
-<aside id="sidebar">
-
-<h3>Our Services</h3>
-
-<ul>
-
-<!-- Link to Guided Tours section -->
-<li><a href="#tours">Guided Tours</a></li>
-
-<!-- Link to Transportation section -->
-<li><a href="#transport">Transportation</a></li>
-
-<!-- Link to Cultural Events section -->
-<li><a href="#events">Cultural Events</a></li>
-
-<!-- Link to Adventure Activities section -->
-<li><a href="#adventure">Adventure Activities</a></li>
-
-</ul>
-
-</aside>
 
 
 <!-- ================= MAIN CONTENT SECTION ================= -->
@@ -92,96 +64,71 @@
 
 <div id="main-content">
 
-<!-- Main Page Heading -->
-<h2>Tourism Services in AlUla</h2>
+    <h2>Tourism Services in AlUla</h2>
 
-<!-- Introduction paragraph -->
-<p>
-AlUla offers a wide range of tourism services designed to help visitors
-explore the region comfortably and safely. These services allow tourists
-to experience the historical, cultural, and natural beauty of AlUla.
-</p>
+    <p>
+        AlUla offers a wide range of tourism services designed to help visitors
+        explore the region comfortably and safely. These services allow tourists
+        to experience the historical, cultural, and natural beauty of AlUla.
+    </p>
 
+    <div class="services-grid">
 
-<!-- ================= GUIDED TOURS SECTION ================= -->
+        <section class="service-card" id="tours">
+            <h3>Guided Heritage Tours</h3>
+            <p>
+                Explore landmarks with professional guides who share ancient stories.
+            </p>
+            <ul>
+                <li>Hegra historical tours</li>
+                <li>Dadan archaeological tours</li>
+                <li>Old Town cultural tours</li>
+            </ul>
+        </section>
 
-<h3 id="tours">Guided Heritage Tours</h3>
+        <section class="service-card" id="transport">
+            <h3>Transportation Services</h3>
+            <p>
+                Travel comfortably between AlUla’s main attractions.
+            </p>
+            <ul>
+                <li>Tour buses</li>
+                <li>Private transportation</li>
+                <li>Airport pickup services</li>
+            </ul>
+        </section>
 
-<p>
-Guided tours help visitors explore the historical landmarks of AlUla
-with the assistance of professional guides. These tours provide
-historical explanations about ancient civilizations and archaeological
-sites.
-</p>
+        <section class="service-card" id="events">
+            <h3>Cultural Events</h3>
+            <p>
+                Experience festivals, art, and heritage celebrations.
+            </p>
+            <ul>
+                <li>Winter at Tantora Festival</li>
+                <li>Art exhibitions</li>
+                <li>Traditional markets</li>
+            </ul>
+        </section>
 
-<!-- List of available tours -->
-<ul>
-<li>Hegra historical tours</li>
-<li>Dadan archaeological tours</li>
-<li>Old Town cultural tours</li>
-</ul>
+        <section class="service-card" id="adventure">
+            <h3>Adventure Activities</h3>
+            <p>
+                Enjoy thrilling outdoor experiences in the desert.
+            </p>
+            <ol>
+                <li>Desert hiking</li>
+                <li>Rock climbing</li>
+                <li>Hot air balloon rides</li>
+                <li>Desert camping</li>
+            </ol>
+        </section>
 
+    </div>
 
-<!-- ================= TRANSPORTATION SERVICES ================= -->
-
-<h3 id="transport">Transportation Services</h3>
-
-<p>
-Transportation services allow visitors to travel easily between the
-main attractions of AlUla. Organized transportation ensures that
-tourists can visit multiple locations comfortably.
-</p>
-
-<!-- Transportation options -->
-<ul>
-<li>Tour buses</li>
-<li>Private transportation</li>
-<li>Airport pickup services</li>
-</ul>
-
-
-<!-- ================= CULTURAL EVENTS ================= -->
-
-<h3 id="events">Cultural Events</h3>
-
-<p>
-AlUla hosts a number of cultural festivals and international events
-that celebrate art, music, and heritage. These events attract visitors
-from around the world.
-</p>
-
-<!-- Examples of events -->
-<ul>
-<li>Winter at Tantora Festival</li>
-<li>Art exhibitions</li>
-<li>Traditional markets</li>
-</ul>
-
-
-<!-- ================= ADVENTURE ACTIVITIES ================= -->
-
-<h3 id="adventure">Adventure Activities</h3>
-
-<p>
-For visitors seeking adventure, AlUla offers outdoor activities that
-allow them to explore the desert landscape and natural landmarks.
-</p>
-
-<!-- Ordered list of adventure activities -->
-<ol>
-<li>Desert hiking</li>
-<li>Rock climbing</li>
-<li>Hot air balloon rides</li>
-<li>Desert camping</li>
-</ol>
-
-
-<!-- Closing paragraph -->
-<p>
-These tourism services help visitors enjoy a complete and memorable
-experience while exploring the rich heritage and natural beauty of
-AlUla.
-</p>
+    <p>
+        These tourism services help visitors enjoy a complete and memorable
+        experience while exploring the rich heritage and natural beauty of AlUla.
+    </p>
 
 </div>
 

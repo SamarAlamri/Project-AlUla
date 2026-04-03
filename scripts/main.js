@@ -1,4 +1,4 @@
-/* Name: Zain Aljifry, ID: 2107808, Section: DAR, Date: 8 march */
+/* Name: [Zain Aljifry], ID: [2107808], Section: [DAR], Date: [8 march] *//* Name: Samar Alamri, ID: 2206831, Section: DAR, Date: 8 march */
 
 
 /* Function used to validate the feedback form before submission */
@@ -89,4 +89,9 @@ function validateForm() {
 
     /* Prevent page reload (keeps the message visible) */
     return false;
+}
+
+function showServices() {
+  document.getElementById('services-link').style.display = 'inline-block';
+  alert('You are now "signed in"!');
 }
