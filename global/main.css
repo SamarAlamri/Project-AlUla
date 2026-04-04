@@ -323,7 +323,14 @@ nav a:hover {
 .history-text {
     flex: 1;
     font-size: 1.1rem;
-    
+    align-items: left ;   
+}
+
+.history-text h2 {
+    /* Ensures the heading specifically stays on the left */
+    text-align: left !important;
+    margin-top: 0;
+    margin-bottom: 15px;
 }
 
 .history-text h3 {
